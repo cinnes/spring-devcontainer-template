@@ -7,16 +7,26 @@
             "installMaven": "true",
             "mavenVersion": "3.9.1",
             "installGradle": "false"
-        }
+        },
+        "ghcr.io/devcontainers/features/docker-in-docker:2": {}
     },
+    "forwardPorts": [8080],
     "remoteUser": "vscode",
     "shutdownAction": "stopCompose",
     "customizations": {
         "vscode": {
+            "settings": {
+                "editor.formatOnSave": true
+            },
             "extensions": [
+                "vmware.vscode-boot-dev-pack",
                 "vscjava.vscode-java-pack",
                 "vscjava.vscode-spring-initializr",
-                "vscjava.vscode-maven"
+                "vscjava.vscode-maven",
+                "VisualStudioExptTeam.vscodeintellicode",
+                "ms-azuretools.vscode-docker",
+                "redhat.vscode-xml",
+                "GitHub.copilot"
             ]
         }
     }
