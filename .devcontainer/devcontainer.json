@@ -9,9 +9,6 @@
             "installGradle": "false"
         }
     },
-    "dockerComposeFile": ["docker-compose.yml"],
-    "service": "workspace",
-    "workspaceFolder": "/home/vscode/workspace",
     "remoteUser": "vscode",
     "shutdownAction": "stopCompose",
     "customizations": {
