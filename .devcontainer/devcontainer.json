@@ -1,0 +1,26 @@
+{
+    "name": "workspace",
+    "image": "mcr.microsoft.com/devcontainers/java:0-17",
+    "features": {
+        "ghcr.io/devcontainers/features/java:1": {
+            "version": "17.0.6",
+            "installMaven": "true",
+            "mavenVersion": "3.9.1",
+            "installGradle": "false"
+        }
+    },
+    "dockerComposeFile": ["docker-compose.yml"],
+    "service": "workspace",
+    "workspaceFolder": "/home/vscode/workspace",
+    "remoteUser": "vscode",
+    "shutdownAction": "stopCompose",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "vscjava.vscode-java-pack",
+                "vscjava.vscode-spring-initializr",
+                "vscjava.vscode-maven"
+            ]
+        }
+    }
+  }
