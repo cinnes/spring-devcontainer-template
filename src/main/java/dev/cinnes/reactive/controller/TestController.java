@@ -11,7 +11,7 @@ import dev.cinnes.api.TestApi;
 public class TestController implements TestApi {
 
     @Override
-    public Mono<String> hello(ServerWebExchange exchange) {
+    public Mono<String> hello(final ServerWebExchange exchange) {
         return Mono.just("Hello world!");
     }
 }
