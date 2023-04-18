@@ -1,0 +1,28 @@
+openapi: "3.0.0"
+info:
+  version: 1.0.0
+  title: Test
+  license:
+    name: MIT
+servers:
+  - url: http://localhost:8080
+    description: Local server
+
+tags:
+  - name: test
+    description: Test Endpoints
+
+paths:
+  /test:
+    get:
+      summary: Test endpoint
+      operationId: hello
+      tags:
+        - test
+      responses:
+        200:
+          description: Hello world output
+          content:
+            text/plain:
+              schema:
+                type: string
