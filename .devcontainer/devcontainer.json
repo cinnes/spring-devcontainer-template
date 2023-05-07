@@ -10,7 +10,9 @@
         },
         "ghcr.io/devcontainers/features/docker-in-docker:2": {}
     },
-    "forwardPorts": [8080],
+    "forwardPorts": [
+        8080
+    ],
     "remoteUser": "vscode",
     "shutdownAction": "stopCompose",
     "customizations": {
@@ -25,9 +27,8 @@
                 "vscjava.vscode-maven",
                 "VisualStudioExptTeam.vscodeintellicode",
                 "ms-azuretools.vscode-docker",
-                "redhat.vscode-xml",
-                "GitHub.copilot"
+                "redhat.vscode-xml"
             ]
         }
     }
-  }
+}
